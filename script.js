@@ -6,12 +6,22 @@ downloadBtn.addEventListener('click',() => {
     sendURL(URLinput.value)
 })
 
-function sendURL(URL) {
-    // fetch(`http://localhost:4000/download?URL=${URL}`, {
-    //     method:'GET'
-    // }).then(res =>res.json())
-    // .then(json => console.log(json))
+async function sendURL(URL) {
+    await fetch(
+			`${URLinput}`,
+			{ mode: "no-cors" },
+			{
+				method: "GET",
+				headers: {
+					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Credentials": true,
+				},
+			},
+		)
+			.then((res) => res.json())
+			// console.log(res.json)
+			.then((json) => console.log(json));
 
 // Replace the fetch ith a redirect to the URL to download the video
-    window.location.href = `http://localhost:4000/Downloads? URL=${URL}`
+    // window.location.replace ( `http://localhost:4000/download? URL=${URL}`)
 } 
