@@ -23,5 +23,5 @@ async function sendURL(URL) {
 			.then((json) => console.log(json));
 
 // Replace the fetch ith a redirect to the URL to download the video
-    // window.location.replace ( `http://localhost:4000/download? URL=${URL}`)
+    window.location.replace ( `http://localhost:4000/download? URL=${URL}`)
 } 
