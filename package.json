@@ -1,6 +1,29 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "node": "^17.5.0",
-    "node-fetch": "^3.2.2"
-  }
+    "node-fetch": "^3.2.2",
+    "ytdl-core": "^4.11.4"
+  },
+  "name": "youtube_downloader",
+  "version": "1.0.0",
+  "description": "mp4 downloader",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max-munene/Youtube_Downloader.git"
+  },
+  "keywords": [
+    "YT"
+  ],
+  "author": "Max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max-munene/Youtube_Downloader/issues"
+  },
+  "homepage": "https://github.com/Max-munene/Youtube_Downloader#readme"
 }
