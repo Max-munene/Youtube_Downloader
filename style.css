@@ -11,19 +11,27 @@
      color: aliceblue;
  }
 
- .URL,.download-btn{
+ .form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .URL-input,.download-btn{
      font-size: .8em;
      padding: 10px 15px;
      border-radius: 8px;
      border: none;
  }
- .URL{
+ .URL-input{
      text-align: left;
      width: 30em;
      background: #EEEEEE;
+     
  }
- .URL:focus {
+ .URL-input:focus {
      border: 2px solid #0485ff;
+     outline: none;
  }
 .download-btn{
     background-color:#66bce7;
